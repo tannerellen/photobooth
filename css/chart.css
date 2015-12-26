@@ -1,0 +1,30 @@
+.chart {
+  position: relative;
+  display: inline-block;
+  width: 150px;
+  height: 150px;
+  border-radius: 150px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  opacity: 0.5;
+}
+.chart canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.percent {
+  color: white;
+  display: inline-block;
+  line-height: 150px;
+  z-index: 2;
+  font-size: 5em;
+  font-weight: 400;
+}
+.percent:after {
+/*  content: '%';
+  margin-left: 0.1em;
+  font-size: .8em;*/
+}

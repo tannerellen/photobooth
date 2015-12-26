@@ -1,0 +1,365 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>AMApplicationBuild</key>
+	<string>419</string>
+	<key>AMApplicationVersion</key>
+	<string>2.6</string>
+	<key>AMDocumentVersion</key>
+	<string>2</string>
+	<key>actions</key>
+	<array>
+		<dict>
+			<key>action</key>
+			<dict>
+				<key>AMActionVersion</key>
+				<string>10.1</string>
+				<key>AMApplication</key>
+				<array>
+					<string>Image Capture</string>
+				</array>
+				<key>AMParameterProperties</key>
+				<dict>
+					<key>deleteAfterSuccessfulDownload</key>
+					<dict/>
+					<key>downloadsDirectory</key>
+					<dict>
+						<key>isPathPopUp</key>
+						<true/>
+						<key>variableUUIDsInMenu</key>
+						<array/>
+					</dict>
+					<key>name</key>
+					<dict/>
+					<key>status</key>
+					<dict/>
+				</dict>
+				<key>AMProvides</key>
+				<dict>
+					<key>Container</key>
+					<string>List</string>
+					<key>Types</key>
+					<array>
+						<string>com.apple.cocoa.path</string>
+					</array>
+				</dict>
+				<key>ActionBundlePath</key>
+				<string>/System/Library/Automator/Take Picture.action</string>
+				<key>ActionName</key>
+				<string>Take Picture</string>
+				<key>ActionParameters</key>
+				<dict>
+					<key>deleteAfterSuccessfulDownload</key>
+					<true/>
+					<key>downloadsDirectory</key>
+					<string>~/Pictures</string>
+					<key>name</key>
+					<string>No supported cameras found</string>
+					<key>status</key>
+					<string></string>
+				</dict>
+				<key>BundleIdentifier</key>
+				<string>com.apple.Automator.TakePicture</string>
+				<key>CFBundleVersion</key>
+				<string>10.1</string>
+				<key>CanShowSelectedItemsWhenRun</key>
+				<true/>
+				<key>CanShowWhenRun</key>
+				<true/>
+				<key>Category</key>
+				<array>
+					<string>AMCategoryPhotos</string>
+				</array>
+				<key>Class Name</key>
+				<string>TakePicture</string>
+				<key>Keywords</key>
+				<array>
+					<string>Camera</string>
+					<string>Take</string>
+					<string>Picture</string>
+					<string>Image</string>
+					<string>Photo</string>
+				</array>
+				<key>OutputUUID</key>
+				<string>018CFE0A-C8CD-457A-9972-7670C191C816</string>
+				<key>UUID</key>
+				<string>FB063270-98DF-422A-A535-1C0F2443BFAE</string>
+				<key>UnlocalizedApplications</key>
+				<array>
+					<string>Image Capture</string>
+				</array>
+				<key>arguments</key>
+				<dict>
+					<key>0</key>
+					<dict>
+						<key>default value</key>
+						<string></string>
+						<key>name</key>
+						<string>status</string>
+						<key>required</key>
+						<string>0</string>
+						<key>type</key>
+						<string>0</string>
+						<key>uuid</key>
+						<string>0</string>
+					</dict>
+					<key>1</key>
+					<dict>
+						<key>default value</key>
+						<string>~/Pictures</string>
+						<key>name</key>
+						<string>downloadsDirectory</string>
+						<key>required</key>
+						<string>0</string>
+						<key>type</key>
+						<string>0</string>
+						<key>uuid</key>
+						<string>1</string>
+					</dict>
+					<key>2</key>
+					<dict>
+						<key>default value</key>
+						<true/>
+						<key>name</key>
+						<string>deleteAfterSuccessfulDownload</string>
+						<key>required</key>
+						<string>0</string>
+						<key>type</key>
+						<string>0</string>
+						<key>uuid</key>
+						<string>2</string>
+					</dict>
+					<key>3</key>
+					<dict>
+						<key>default value</key>
+						<string>No supported cameras found</string>
+						<key>name</key>
+						<string>name</string>
+						<key>required</key>
+						<string>0</string>
+						<key>type</key>
+						<string>0</string>
+						<key>uuid</key>
+						<string>3</string>
+					</dict>
+				</dict>
+				<key>isViewVisible</key>
+				<true/>
+				<key>location</key>
+				<string>309.000000:188.000000</string>
+				<key>nibPath</key>
+				<string>/System/Library/Automator/Take Picture.action/Contents/Resources/Base.lproj/main.nib</string>
+			</dict>
+			<key>isViewVisible</key>
+			<true/>
+		</dict>
+		<dict>
+			<key>action</key>
+			<dict>
+				<key>AMAccepts</key>
+				<dict>
+					<key>Container</key>
+					<string>List</string>
+					<key>Optional</key>
+					<true/>
+					<key>Types</key>
+					<array>
+						<string>com.apple.applescript.object</string>
+					</array>
+				</dict>
+				<key>AMActionVersion</key>
+				<string>1.0</string>
+				<key>AMApplication</key>
+				<array>
+					<string>Automator</string>
+				</array>
+				<key>AMParameterProperties</key>
+				<dict>
+					<key>source</key>
+					<dict/>
+				</dict>
+				<key>AMProvides</key>
+				<dict>
+					<key>Container</key>
+					<string>List</string>
+					<key>Types</key>
+					<array>
+						<string>com.apple.applescript.object</string>
+					</array>
+				</dict>
+				<key>ActionBundlePath</key>
+				<string>/System/Library/Automator/Run JavaScript.action</string>
+				<key>ActionName</key>
+				<string>Run JavaScript</string>
+				<key>ActionParameters</key>
+				<dict>
+					<key>source</key>
+					<string>function run(input, parameters) {
+	var sourceFile, currentApp, path, pathItems, photoPath, fileName, filePath, googleChrome, chromeWindow, chromeTab, url, urlItems, newURL;
+	
+	if (input &amp;&amp; Object.keys(input).length) {
+		sourceFile = input.toString();
+		//Get current application path
+		currentApp = Application.currentApplication();
+		currentApp.includeStandardAdditions = true;
+		path = currentApp.pathTo(this).toString();
+
+		pathItems = path.split('/');
+
+		pathItems.pop();	
+
+		photoPath = pathItems.join('/') + '/photos/';
+
+		currentApp.doShellScript("mv '" + sourceFile + "' '" + photoPath + "'");
+	
+		//Determine the filepath
+		fileName = input.toString().split('/').pop();
+		filePath = 'photos/';
+	}
+	else {
+		//No image was taken pass no image found
+		fileName = 'no-image-found.png'
+		filePath = 'images/';
+	}
+	
+	//Determine the fileName and alert chrome
+	googleChrome = Application("Google Chrome");
+	chromeWindow = googleChrome.windows[0];
+	chromeTab = chromeWindow.tabs[0];
+	url = chromeTab.url();
+
+	urlItems = url.split('#');
+	newURL = urlItems[0] + "#" + filePath + fileName;
+	chromeTab.url = newURL;
+
+	return input;
+}</string>
+				</dict>
+				<key>BundleIdentifier</key>
+				<string>com.apple.Automator.RunJavaScript</string>
+				<key>CFBundleVersion</key>
+				<string>1.0</string>
+				<key>CanShowSelectedItemsWhenRun</key>
+				<false/>
+				<key>CanShowWhenRun</key>
+				<true/>
+				<key>Category</key>
+				<array>
+					<string>AMCategoryUtilities</string>
+				</array>
+				<key>Class Name</key>
+				<string>RunJavaScriptAction</string>
+				<key>InputUUID</key>
+				<string>C6738BF3-C913-4D4B-9638-909C6666B359</string>
+				<key>Keywords</key>
+				<array>
+					<string>Run</string>
+					<string>JavaScript</string>
+				</array>
+				<key>OutputUUID</key>
+				<string>27A56719-5AC9-4D5A-ADAB-698920DAAE5E</string>
+				<key>UUID</key>
+				<string>98CC16B5-7670-47D0-BCEA-31F3EAEB03F5</string>
+				<key>UnlocalizedApplications</key>
+				<array>
+					<string>Automator</string>
+				</array>
+				<key>arguments</key>
+				<dict>
+					<key>0</key>
+					<dict>
+						<key>default value</key>
+						<string>function run(input, parameters) {
+	
+	// Your script goes here
+
+	return input;
+}</string>
+						<key>name</key>
+						<string>source</string>
+						<key>required</key>
+						<string>0</string>
+						<key>type</key>
+						<string>0</string>
+						<key>uuid</key>
+						<string>0</string>
+					</dict>
+				</dict>
+				<key>isViewVisible</key>
+				<true/>
+				<key>location</key>
+				<string>309.000000:434.000000</string>
+				<key>nibPath</key>
+				<string>/System/Library/Automator/Run JavaScript.action/Contents/Resources/Base.lproj/main.nib</string>
+			</dict>
+			<key>isViewVisible</key>
+			<true/>
+		</dict>
+	</array>
+	<key>connectors</key>
+	<dict>
+		<key>2F234BD3-2FF4-4707-98CD-D80EE38DD48F</key>
+		<dict>
+			<key>from</key>
+			<string>FB063270-98DF-422A-A535-1C0F2443BFAE - FB063270-98DF-422A-A535-1C0F2443BFAE</string>
+			<key>to</key>
+			<string>98CC16B5-7670-47D0-BCEA-31F3EAEB03F5 - 98CC16B5-7670-47D0-BCEA-31F3EAEB03F5</string>
+		</dict>
+	</dict>
+	<key>variables</key>
+	<array>
+		<dict>
+			<key>UUID</key>
+			<string>19D54FFC-3F5B-4A05-87C8-5EA66781534E</string>
+			<key>identifier</key>
+			<string>com.apple.Automator.Variable.Path</string>
+			<key>name</key>
+			<string>Path</string>
+			<key>value</key>
+			<string>~/Desktop</string>
+		</dict>
+		<dict>
+			<key>UUID</key>
+			<string>BF73CDBB-F11B-43B3-B905-930C3319C63C</string>
+			<key>identifier</key>
+			<string>com.apple.Automator.Variable.Path</string>
+			<key>name</key>
+			<string>Path 1</string>
+			<key>value</key>
+			<string>~/Desktop</string>
+		</dict>
+		<dict>
+			<key>UUID</key>
+			<string>5B05B682-D7FD-484C-A718-28F0507C42CD</string>
+			<key>identifier</key>
+			<string>com.apple.Automator.Variable.Storage</string>
+			<key>name</key>
+			<string>Storage</string>
+		</dict>
+		<dict>
+			<key>UUID</key>
+			<string>E9E222A0-94F4-4121-BB6F-680101CA1663</string>
+			<key>identifier</key>
+			<string>com.apple.Automator.Variable.Storage</string>
+			<key>name</key>
+			<string>Path To Self</string>
+		</dict>
+		<dict>
+			<key>UUID</key>
+			<string>0BE2E95F-CC41-4798-B5B6-60C1FE825BD1</string>
+			<key>identifier</key>
+			<string>com.apple.Automator.Variable.Path</string>
+			<key>name</key>
+			<string>Path 2</string>
+			<key>value</key>
+			<string>~/Desktop</string>
+		</dict>
+	</array>
+	<key>workflowMetaData</key>
+	<dict>
+		<key>workflowTypeIdentifier</key>
+		<string>com.apple.Automator.workflow</string>
+	</dict>
+</dict>
+</plist>

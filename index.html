@@ -1,0 +1,61 @@
+<!doctype html>
+<html>
+	<head>
+	<title>Photo Booth</title>
+
+	<link rel="stylesheet" type="text/css" href="css/chart.css">
+	<link rel="stylesheet" type="text/css" href="css/app.css">
+
+	<script type='text/javascript' src="libraries/adapter.js"></script>
+	<script type='text/javascript' src="libraries/easypiechart.js"></script>
+
+	</head>
+	<body>
+		<div class="container">
+			<div class="title-container">
+				<h1 class="title">The Ellens' Christmas Photo Booth</h1>
+				<h2 class="instructions">Please press the green button below to take a picture</h2>
+			</div>
+
+		  	<div class="video-container video-preview">
+				<div class="video">
+			  		<video muted autoplay></video>
+				</div>
+			</div>
+
+			<div class="footer">
+				<img class="qr-code" src="images/qrcode.png"/>
+				<h2 class="footer-url">View photos @ http://goo.gl/CtngjT</h2>
+			</div>
+			
+			<div class="counter-container"></div>
+
+		  	<div class="loading hide">
+			  	<div class="sk-folding-cube">
+				  <div class="sk-cube1 sk-cube"></div>
+				  <div class="sk-cube2 sk-cube"></div>
+				  <div class="sk-cube4 sk-cube"></div>
+				  <div class="sk-cube3 sk-cube"></div>
+				</div>
+				<h2 class="message">Please wait while we retrieve your photo...</h2>
+			</div>
+
+		  	<div class="cover blank fade-in">
+			  	<div class="loading">
+				  	<div class="sk-folding-cube">
+					  <div class="sk-cube1 sk-cube"></div>
+					  <div class="sk-cube2 sk-cube"></div>
+					  <div class="sk-cube4 sk-cube"></div>
+					  <div class="sk-cube3 sk-cube"></div>
+					</div>
+					<!-- <h2 class="message">Please wait while we retrieve your photo...</h2> -->
+				</div>
+		  	</div>
+		
+		</div>
+		
+		<script type='text/javascript' src="app/js/photobooth.js"></script>
+		<script type='text/javascript' src="app/js/app.js"></script>
+
+	</body>
+</html>

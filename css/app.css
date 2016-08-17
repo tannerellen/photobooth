@@ -51,12 +51,17 @@ h2 {
 	right: 0;
 	bottom: 0;
 	left: 0;
-	background-color: rgb(255, 50, 50);
+	background-image: url('../images/background.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	/*background-color: rgb(255, 50, 50);*/
 	overflow: hidden;
 }
 .title-container {
 	padding: 20px;
 	text-align: center;
+	-webkit-text-stroke: 1px rgb(100,100,100);
+
 }
 .title {
 	color: rgb(255,255,255);
@@ -65,7 +70,7 @@ h2 {
 	text-overflow: ellipsis;
 }
 .instructions {
-	color: rgb(50,50,50);
+	color: rgb(255,255,255);
 	white-space: nowrap;
   	overflow: hidden;
 	text-overflow: ellipsis;
@@ -87,7 +92,7 @@ h2 {
 	right: 0;
 }
 .video-capture {
-	background-color: inherit;
+	background: inherit;
 }
 .video {
 	position: absolute;
@@ -215,7 +220,7 @@ video {
 	opacity: 0;
 }
 .blank {
-	background-color: inherit;
+	background: inherit;
 }
 .photo-preview {
 	position: absolute;

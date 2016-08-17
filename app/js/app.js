@@ -15,7 +15,7 @@
 
   //Initialize content
   window.onload = initialize();
-  
+
 
   function initialize() {
       //Watch for hash change so we know when an image is done being processed
@@ -87,7 +87,7 @@
       console.log('navigator.getUserMedia error: ', error);
     }
   }
-  
+
   function resetPhotoBooth() {
     //Change video size back to preview
     adjustVideoPreview(true)
@@ -225,7 +225,7 @@
     window.setTimeout(function() {
       photoElement.classList.add("fade-in");
     },100);
-  
+
   }
 
   function photoPreviewComplete(animationEnd) {
@@ -243,6 +243,7 @@
       size: 150,
       animate: 1000,
       lineCap: 'square',
+      barColor: '#000',
       scaleColor: false,
       lineWidth: 6,
 
@@ -264,7 +265,7 @@
   function adjustVideoPreview(reset) {
     if (reset) {
       videoContainerElement.classList.add("video-preview");
-      videoContainerElement.classList.remove("video-capture");  
+      videoContainerElement.classList.remove("video-capture");
     }
     else {
       videoContainerElement.classList.remove("video-preview");

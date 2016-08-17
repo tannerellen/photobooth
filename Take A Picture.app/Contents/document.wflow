@@ -147,7 +147,7 @@
 				<key>isViewVisible</key>
 				<true/>
 				<key>location</key>
-				<string>309.000000:188.000000</string>
+				<string>309.000000:256.000000</string>
 				<key>nibPath</key>
 				<string>/System/Library/Automator/Take Picture.action/Contents/Resources/Base.lproj/main.nib</string>
 			</dict>
@@ -195,46 +195,7 @@
 				<key>ActionParameters</key>
 				<dict>
 					<key>source</key>
-					<string>function run(input, parameters) {
-	var sourceFile, currentApp, path, pathItems, photoPath, fileName, filePath, googleChrome, chromeWindow, chromeTab, url, urlItems, newURL;
-	
-	if (input &amp;&amp; Object.keys(input).length) {
-		sourceFile = input.toString();
-		//Get current application path
-		currentApp = Application.currentApplication();
-		currentApp.includeStandardAdditions = true;
-		path = currentApp.pathTo(this).toString();
-
-		pathItems = path.split('/');
-
-		pathItems.pop();	
-
-		photoPath = pathItems.join('/') + '/photos/';
-
-		currentApp.doShellScript("mv '" + sourceFile + "' '" + photoPath + "'");
-	
-		//Determine the filepath
-		fileName = input.toString().split('/').pop();
-		filePath = 'photos/';
-	}
-	else {
-		//No image was taken pass no image found
-		fileName = 'no-image-found.png'
-		filePath = 'images/';
-	}
-	
-	//Determine the fileName and alert chrome
-	googleChrome = Application("Google Chrome");
-	chromeWindow = googleChrome.windows[0];
-	chromeTab = chromeWindow.tabs[0];
-	url = chromeTab.url();
-
-	urlItems = url.split('#');
-	newURL = urlItems[0] + "#" + filePath + fileName;
-	chromeTab.url = newURL;
-
-	return input;
-}</string>
+					<string>function run(input, parameters) {	var sourceFile, currentApp, path, pathItems, photoPath, fileName, filePath, googleChrome, chromeWindow, chromeTab, url, urlItems, newURL;		if (input &amp;&amp; Object.keys(input).length) {		sourceFile = input.toString();		//Get current application path		currentApp = Application.currentApplication();		currentApp.includeStandardAdditions = true;		path = currentApp.pathTo(this).toString();		pathItems = path.split('/');		pathItems.pop();			photoPath = pathItems.join('/') + '/photos/';				//Change permissions of file so everyone can read		currentApp.doShellScript("chmod 744 '" + sourceFile + "'");				//Move file to photos folder		currentApp.doShellScript("mv '" + sourceFile + "' '" + photoPath + "'");			//Determine the filepath		fileName = input.toString().split('/').pop();		filePath = 'photos/';	}	else {		//No image was taken pass no image found		fileName = 'no-image-found.png'		filePath = 'images/';	}		//Determine the fileName and alert chrome	googleChrome = Application("Google Chrome");	chromeWindow = googleChrome.windows[0];	chromeTab = chromeWindow.tabs[0];	url = chromeTab.url();	urlItems = url.split('#');	newURL = urlItems[0] + "#" + filePath + fileName;	chromeTab.url = newURL;	return input;}</string>
 				</dict>
 				<key>BundleIdentifier</key>
 				<string>com.apple.Automator.RunJavaScript</string>
@@ -289,7 +250,7 @@
 				<key>isViewVisible</key>
 				<true/>
 				<key>location</key>
-				<string>309.000000:434.000000</string>
+				<string>309.000000:502.000000</string>
 				<key>nibPath</key>
 				<string>/System/Library/Automator/Run JavaScript.action/Contents/Resources/Base.lproj/main.nib</string>
 			</dict>
@@ -299,7 +260,7 @@
 	</array>
 	<key>connectors</key>
 	<dict>
-		<key>2F234BD3-2FF4-4707-98CD-D80EE38DD48F</key>
+		<key>FBB669B0-5031-4EE0-B79E-3A6B4A4BD2DA</key>
 		<dict>
 			<key>from</key>
 			<string>FB063270-98DF-422A-A535-1C0F2443BFAE - FB063270-98DF-422A-A535-1C0F2443BFAE</string>
